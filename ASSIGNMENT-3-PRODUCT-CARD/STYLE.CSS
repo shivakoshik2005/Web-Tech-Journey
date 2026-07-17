@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(240,229,220);
+    /* background-color: black; */
+}
+
+#product-card {
+    height: 487px;
+    width: 650px;
+    background-color: rgb(255, 255, 255);
+    margin: 220px auto;
+    border-radius: 10px;
+    display: flex;
+}
+
+#image-portion {
+    background-image: url(https://mr-chanel-preview.netlify.app/images/image-product-desktop.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 488px;
+    width: 325px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#details-portion {
+    height: 487px;
+    width: 325px;
+    background-color:white;
+    padding: 25px 55px 15px 35px;
+    box-sizing: border-box;
+    border-radius: 0px 10px 10px 0px;
+
+}
+p{
+    font-size: 19px;
+}
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.current-price {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    color: var(--dark-cyan);
+}
+
+.original-price {
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+.cart-btn {
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.cart-btn {
+    background-color: rgb(2, 94, 19);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}

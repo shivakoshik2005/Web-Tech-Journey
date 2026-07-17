@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+body {
+    background-color: rgb(250, 235, 224);
+    padding: 0;
+}
+
+#big-box {
+    background-color: rgb(255, 255, 255);
+    height: 2400px;
+    width: 900px;
+    margin: 160px auto;
+    border-radius: 40px;
+    padding: 50px;
+}
+
+header {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#prep-box {
+    height: 200px;
+    background-color: rgb(255, 228, 233);
+    margin-top: 45px;
+    border-radius: 20px;
+    padding: 40px;
+
+}
+
+li {
+    font-family: "Jost", sans-serif;
+    font-size: 23px;
+    color: rgb(56, 55, 55);
+    line-height: 2;
+}
+
+.nutrition-card {
+    width: 900px;
+    max-width: 1000px;
+
+}
+
+.nutrition-table {
+    width: 900px;
+    border-collapse: collapse;
+    margin: 20px;
+
+}
+
+.nutrition-table td {
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+.label {
+    color: #555555;
+    text-align: left;
+    font-family: "Jost", sans-serif
+}
+
+
+.value {
+    color: #4a2c1b;
+    font-weight: bolder;
+    text-align: left;
+}
+#para{
+    font-family: "Jost",sans-serif; 
+    font-size: 18px; color: 
+    grey; font-weight:bold;
+}
