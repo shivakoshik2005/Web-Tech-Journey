@@ -53,21 +53,6 @@ p{
 }
 
 .cart-btn {
-    background-color: var(--dark-cyan);
-    color: var(--white);
-    border: none;
-    padding: 15px;
-    border-radius: 8px;
-    font-weight: 700;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    transition: background-color 0.2s ease;
-}
-
-.cart-btn {
     background-color: rgb(2, 94, 19);
     color: white;
     border: none;
