@@ -79,13 +79,13 @@ margin-top: 90px;
   margin-bottom: 24px;
 }
 
-.avatar-wrapper {
+.avatar {
   flex-basis: 250px;
   display: flex;
   justify-content: center;
 }
 
-.profile-avatar {
+.profile {
   width: 150px;
   height: 150px;
   background-image: url(./profile-logo.jpg);
@@ -200,7 +200,7 @@ margin-top: 90px;
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4px;
+  gap: 5px;
 }
 
 .grid-card {
