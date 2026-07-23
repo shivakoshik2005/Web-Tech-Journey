@@ -35,12 +35,12 @@ body {
 }
 .boxes {
     background-color: aqua;
-    border: 1px solid black;
+    border: 0.1rem solid black;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
+    font-size: 5REM;
     background-color: rgb(60,60,60);
     padding: 1rem;
 
@@ -51,7 +51,7 @@ body {
     display: flex;
     justify-content: right;
     align-items: end;
-    font-size: 110px;
+    font-size: 6.875rem;
     background-color: black;
 }
 .AC{
