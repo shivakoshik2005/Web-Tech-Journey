@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(12, 15, 26);
+    display: flex;
+    justify-content: center;
+}
+
+#dashboard {
+    height: 70vh;
+    width: 70vw;
+    
+    margin-top: 15vh;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.boxes {
+    background-color: black;
+    border-radius: 10%;
+}
+
+.b1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 30px;
+    background-color: rgb(29, 31, 75);
+}
+
+/* profile section */
+.boxes.b1 #profile-card {
+    height: 70%;
+    width: 100%;
+    background-color: rgb(87, 70, 234);
+    border-radius: 1.88rem;
+    padding: 2rem;
+}
+
+.boxes.b1 #profile-card #image {
+    height: 8vh;
+    width: 4.3vw;
+    border-radius: 50%;
+    background-image: url('./main-pic.png');
+    background-size: cover;
+}
+
+.boxes.b1 #profile-card #details {
+    margin-top: 7vh;
+}
+
+.boxes.b1 #toggle {
+    background-color: rgb(29, 31, 75);
+    height: 30%;
+    width: 100%;
+    border-radius: 0 0 1.88rem 1.88rem;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+
+.boxes.b1 #toggle ul {
+    line-height: 50px;
+    list-style: none;
+}
+
+/* information tiles - applied to b2 through b7 */
+.boxes:not(.b1) {
+    position: relative;
+}
+
+.boxes:not(.b1) .background-tile {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+    border-radius: 10%;
+    background-image: url('./main-pic.png');
+}
+
+.boxes:not(.b1) .foreground-tile {
+    height: 80%;
+    width: 100%;
+    background-color: rgb(29, 31, 75);
+    top: 6.2vh;
+    position: absolute;
+    border-radius: 10%;
+    padding: 2rem;
+    color: white;
+}
