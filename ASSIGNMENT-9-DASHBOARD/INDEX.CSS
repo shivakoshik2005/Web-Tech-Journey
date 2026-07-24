@@ -14,7 +14,7 @@ body {
 #dashboard {
     height: 70vh;
     width: 70vw;
-    
+
     margin-top: 15vh;
     display: grid;
     padding: 2rem;
@@ -79,7 +79,7 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    
+
     border-radius: 10%;
     background-image: url('./main-pic.png');
 }
@@ -97,6 +97,17 @@ body {
 
 /* paragraph text */
 
-p{
+p {
     color: rgb(164, 142, 228);
+}
+
+h1 {
+    font-size: 5.625em;
+    color: white;
+    font-weight: lighter;
+    margin-top: 4vh;
+}
+
+h3{
+    font-size: 1.17em;
 }
