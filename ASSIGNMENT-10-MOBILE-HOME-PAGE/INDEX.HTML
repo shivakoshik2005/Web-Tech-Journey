@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="mobile-screen">
+
+        
+
+        <!-- Dashboard Layout Grid -->
+        <div class="dashboard-grid">
+
+            <!-- Left side -->
+            <div class="grid-column left-col">
+                <div class="widget record-widget">
+                    <div class="mic-circle">🎙️</div>
+                    <span class="timer">00:00</span>
+                </div>
+
+                <div class="widget battery-widget">
+                    <img src="image copy 6.png" alt="Battery Widget" class="battery-img">
+                </div>
+
+                <!-- <div class="widget fitness-widget">
+                    <div class="heart-ring">💚</div>
+                    <div class="fitness-metrics">
+                        <div class="metric">👟 8,159</div>
+                        <div class="metric">🕒 85</div>
+                        <div class="metric">🔥 331</div>
+                    </div>
+                </div> -->
+                <div class="widget fitness-widget">
+                    <img src="image copy 5.png" alt="Battery Widget" class="battery-img">
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="grid-column right-col">
+                <div class="clock-widget-wrapper">
+                    <img src="image.png" alt="Analog Clock" class="clock-img">
+                </div>
+
+                <div class="widget duolingo-widget">
+                    <img src="image copy 3.png" alt="Duolingo Widget" class="duo-img">
+                </div>
+            </div>
+
+            <!-- Full Width Widgets -->
+            <div class="widget sleep-widget full-width">
+                <div class="sleep-top">
+                    <div class="sleep-title">Sleep time</div>
+                    <div class="sleep-range">🛏️ 10:20 pm - 6:30 am</div>
+                </div>
+
+                <div class="sleep-middle-container">
+                    <div class="sleep-stat">8<small>h</small> 10<small>m</small></div>
+                    <div class="sleep-bars-group">
+                        <div class="bar-col"><div class="bar" style="height: 28px;"></div><span>18</span></div>
+                        <div class="bar-col"><div class="bar" style="height: 42px;"></div><span>19</span></div>
+                        <div class="bar-col"><div class="bar" style="height: 26px;"></div><span>20</span></div>
+                        <div class="bar-col"><div class="bar" style="height: 32px;"></div><span>21</span></div>
+                        <div class="bar-col"><div class="bar" style="height: 34px;"></div><span>22</span></div>
+                        <div class="bar-col"><div class="bar" style="height: 30px;"></div><span>23</span></div>
+                        <div class="bar-col"><div class="bar active-bar" style="height: 34px;"></div><span style="color: red;">24</span></div>
+                    </div>
+                </div>
+                <div class="sleep-progress-pill"></div>
+            </div>
+
+            <div class="widget screentime-widget full-width">
+                <div class="screen-left">
+                    <div class="heart-badge">🩵</div>
+                    <div class="total-time">3<small>h</small> 7<small>m</small></div>
+                </div>
+                <div class="screen-right">
+                    <div class="app-info">
+                        <span class="app-dot"></span>
+                        <span class="app-name">Instagram</span>
+                        <strong>1 h 41 m</strong>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-fill blue" style="width: 55%;"></div>
+                        <div class="bar-fill cyan" style="width: 15%;"></div>
+                        <div class="bar-fill green" style="width: 10%;"></div>
+                        <div class="bar-fill gray" style="width: 20%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widget reminders-widget full-width">
+                <div class="reminders-header">
+                    <span>All reminders</span>
+                    <button class="add-circle">+</button>
+                </div>
+                <ul class="todo-list">
+                    <li><span class="check-circle"></span> Understand google maps</li>
+                    <li><span class="check-circle"></span> Practice a lot</li>
+                    <li><span class="check-circle"></span> Design plan of action</li>
+                    <li><span class="check-circle"></span> Organize playlists</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

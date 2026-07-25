@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:sans-serif;
+    color: #ffffff;
+}
+
+/* Mobile Screen Frame */
+#mobile-screen {
+    height: 840px;
+    width: 390px;
+    background: url('./wallpaper.png') center/cover;
+    border: 8px solid #333333;
+    border-radius: 44px;
+    position: relative;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* Layout Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    align-items: start;
+}
+
+.grid-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.grid-column.left-col {
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.full-width {
+    grid-column: span 2;
+    width: 100%;
+}
+
+/* Base Widget Styling */
+.widget {
+    width: 100%;
+    background: rgba(20, 20, 22, 0.82);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 24px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Record Widget */
+.record-widget {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    height: 56px;
+    background: rgba(30, 18, 18, 0.85);
+}
+
+.mic-circle {
+    background: #ff453a;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.timer {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+/* Image Widgets */
+.clock-widget-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-img {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.battery-widget, 
+.duolingo-widget {
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+    border-radius: 24px;
+}
+
+.battery-widget,
+.battery-img {
+    height: 68px;
+}
+
+.battery-img, 
+.duo-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    display: block;
+}
+
+.duo-img {
+    height: 140px;
+}
+
+/* Sleep Widget */
+.sleep-widget {
+    background: radial-gradient(circle at top right, #242962, #181b40 80%);
+    padding: 16px;
+    border-radius: 28px;
+}
+
+.sleep-top {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sleep-title {
+    font-size: 1rem;
+    color: #a4a9ff;
+    font-weight: 600;
+}
+
+.sleep-range {
+    font-size: 0.8rem;
+    color: #e0e2ff;
+}
+
+.sleep-middle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.sleep-stat {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.sleep-bars-group {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.bar-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.7rem;
+    color: #a2a6d8;
+}
+
+.bar {
+    width: 10px;
+    background: #716fff;
+    border-radius: 5px;
+}
+
+.active-bar {
+    background: #928eff;
+}
+
+.sleep-progress-pill {
+    height: 18px;
+    background: #736bfe;
+    border-radius: 12px;
+    width: 100%;
+}
+
+/* Screen Time Widget */
+.screentime-widget {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+}
+
+.screen-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.heart-badge {
+    font-size: 1.2rem;
+}
+
+.total-time {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.screen-right {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.app-info {
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.app-dot {
+    width: 6px;
+    height: 6px;
+    background: #0a84ff;
+    border-radius: 50%;
+}
+
+.bar-container {
+    width: 130px;
+    height: 8px;
+    background: #333333;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.bar-fill.blue { background: #0a84ff; }
+.bar-fill.cyan { background: #64d2ff; }
+.bar-fill.green { background: #30d158; }
+.bar-fill.gray { background: #555555; }
+
+/* Reminders Widget */
+.reminders-widget {
+    background: rgba(18, 18, 20, 0.92);
+    padding: 16px;
+}
+
+.reminders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.add-circle {
+    width: 22px;
+    height: 22px;
+    background: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    font-size: 0.82rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.check-circle {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #666666;
+    border-radius: 50%;
+}
