@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- NAVBAR SECTION -->
+  <header class="navbar">
+    <div class="logo-container">
+      <a href="#"><img class="myntra-logo" src="./images" alt="Myntra Logo"></a>
+    </div>
+
+    <!-- Navigation Menu with Comprehensive Hover Dropdowns -->
+    <nav class="nav-links">
+      
+      <!-- 1. MEN DROPDOWN -->
+      <div class="nav-item">
+        <a href="#" class="nav-link">MEN</a>
+        <div class="dropdown-menu mega-dropdown">
+          <div class="dropdown-column">
+            <h4>Topwear</h4>
+            <a href="#">T-Shirts</a>
+            <a href="#">Casual Shirts</a>
+            <a href="#">Formal Shirts</a>
+            <a href="#">Sweatshirts</a>
+            <a href="#">Sweaters</a>
+            <a href="#">Jackets</a>
+            <a href="#">Blazers & Coats</a>
+            <a href="#">Suits</a>
+            <a href="#">Rain Jackets</a>
+            <h4 class="sub-header">Indian & Festive Wear</h4>
+            <a href="#">Kurtas & Kurta Sets</a>
+            <a href="#">Sherwanis</a>
+            <a href="#">Nehru Jackets</a>
+            <a href="#">Dhotis</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Bottomwear</h4>
+            <a href="#">Jeans</a>
+            <a href="#">Casual Trousers</a>
+            <a href="#">Formal Trousers</a>
+            <a href="#">Shorts</a>
+            <a href="#">Track Pants & Joggers</a>
+            <h4 class="sub-header">Innerwear & Sleepwear</h4>
+            <a href="#">Briefs & Trunks</a>
+            <a href="#">Boxers</a>
+            <a href="#">Vests</a>
+            <a href="#">Sleepwear & Loungewear</a>
+            <a href="#">Thermals</a>
+            <h4 class="sub-header">Plus Size</h4>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Footwear</h4>
+            <a href="#">Casual Shoes</a>
+            <a href="#">Sports Shoes</a>
+            <a href="#">Formal Shoes</a>
+            <a href="#">Sneakers</a>
+            <a href="#">Sandals & Floaters</a>
+            <a href="#">Flip Flops</a>
+            <a href="#">Socks</a>
+            <h4 class="sub-header">Personal Care & Grooming</h4>
+            <h4 class="sub-header">Sunglasses & Frames</h4>
+            <h4 class="sub-header">Watches</h4>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Sports & Active Wear</h4>
+            <a href="#">Sports Shoes</a>
+            <a href="#">Sports Sandals</a>
+            <a href="#">Active T-Shirts</a>
+            <a href="#">Track Pants & Shorts</a>
+            <a href="#">Tracksuits</a>
+            <a href="#">Jackets & Sweatshirts</a>
+            <a href="#">Sports Accessories</a>
+            <a href="#">Swimwear</a>
+            <h4 class="sub-header">Gadgets</h4>
+            <a href="#">Smart Wearables</a>
+            <a href="#">Fitness Gadgets</a>
+            <a href="#">Headphones</a>
+            <a href="#">Speakers</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Fashion Accessories</h4>
+            <a href="#">Wallets</a>
+            <a href="#">Belts</a>
+            <a href="#">Perfumes & Body Mists</a>
+            <a href="#">Trimmers</a>
+            <a href="#">Deodorants</a>
+            <a href="#">Ties, Cufflinks & Pocket Squares</a>
+            <a href="#">Accessory Gift Sets</a>
+            <a href="#">Caps & Hats</a>
+            <a href="#">Mufflers, Scarves & Gloves</a>
+            <a href="#">Phone Cases</a>
+            <a href="#">Rings & Wristwear</a>
+            <a href="#">Helmets</a>
+            <h4 class="sub-header">Bags & Backpacks</h4>
+            <h4 class="sub-header">Luggages & Trolleys</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. WOMEN DROPDOWN -->
+      <div class="nav-item">
+        <a href="#" class="nav-link">WOMEN</a>
+        <div class="dropdown-menu mega-dropdown">
+          <div class="dropdown-column">
+            <h4>Indian & Fusion Wear</h4>
+            <a href="#">Kurtas & Suits</a>
+            <a href="#">Kurtis, Tunics & Tops</a>
+            <a href="#">Sarees</a>
+            <a href="#">Ethnic Wear</a>
+            <a href="#">Leggings, Salwars & Churidars</a>
+            <a href="#">Skirts & Palazzos</a>
+            <a href="#">Dress Materials</a>
+            <a href="#">Lehenga Cholis</a>
+            <a href="#">Dupattas & Shawls</a>
+            <a href="#">Jackets</a>
+            <h4 class="sub-header">Belts, Scarves & More</h4>
+            <h4 class="sub-header">Watches & Wearables</h4>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Western Wear</h4>
+            <a href="#">Dresses</a>
+            <a href="#">Tops</a>
+            <a href="#">Tshirts</a>
+            <a href="#">Jeans</a>
+            <a href="#">Trousers & Capris</a>
+            <a href="#">Shorts & Skirts</a>
+            <a href="#">Co-ords</a>
+            <a href="#">Playsuits</a>
+            <a href="#">Jumpsuits</a>
+            <a href="#">Shrugs</a>
+            <a href="#">Sweaters & Sweatshirts</a>
+            <a href="#">Jackets & Coats</a>
+            <a href="#">Blazers & Waistcoats</a>
+            <h4 class="sub-header">Plus Size</h4>
+            <h4 class="sub-header">Maternity</h4>
+            <h4 class="sub-header">Sunglasses & Frames</h4>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Footwear</h4>
+            <a href="#">Flats</a>
+            <a href="#">Casual Shoes</a>
+            <a href="#">Heels</a>
+            <a href="#">Boots</a>
+            <a href="#">Sports Shoes & Floaters</a>
+            <h4 class="sub-header">Sports & Active Wear</h4>
+            <a href="#">Clothing</a>
+            <a href="#">Footwear</a>
+            <a href="#">Sports Accessories</a>
+            <a href="#">Sports Equipment</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Lingerie & Sleepwear</h4>
+            <a href="#">Bra</a>
+            <a href="#">Briefs</a>
+            <a href="#">Shapewear</a>
+            <a href="#">Sleepwear & Loungewear</a>
+            <a href="#">Swimwear</a>
+            <a href="#">Camisoles & Thermals</a>
+            <h4 class="sub-header">Beauty & Personal Care</h4>
+            <a href="#">Makeup</a>
+            <a href="#">Skincare</a>
+            <a href="#">Premium Beauty</a>
+            <a href="#">Lipsticks</a>
+            <a href="#">Fragrances</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Gadgets</h4>
+            <a href="#">Smart Wearables</a>
+            <a href="#">Fitness Gadgets</a>
+            <a href="#">Headphones</a>
+            <a href="#">Speakers</a>
+            <h4 class="sub-header">Jewellery</h4>
+            <a href="#">Fashion Jewellery</a>
+            <a href="#">Fine Jewellery</a>
+            <a href="#">Earrings</a>
+            <h4 class="sub-header">Backpacks</h4>
+            <h4 class="sub-header">Handbags, Bags & Wallets</h4>
+            <h4 class="sub-header">Luggages & Trolleys</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. KIDS DROPDOWN -->
+      <div class="nav-item">
+        <a href="#" class="nav-link">KIDS</a>
+        <div class="dropdown-menu mega-dropdown">
+          <div class="dropdown-column">
+            <h4>Boys Clothing</h4>
+            <a href="#">T-Shirts</a>
+            <a href="#">Shirts</a>
+            <a href="#">Shorts</a>
+            <a href="#">Jeans</a>
+            <a href="#">Trousers</a>
+            <a href="#">Clothing Sets</a>
+            <a href="#">Ethnic Wear</a>
+            <a href="#">Track Pants & Pyjamas</a>
+            <a href="#">Jacket, Sweater & Sweatshirts</a>
+            <a href="#">Party Wear</a>
+            <a href="#">Innerwear & Thermals</a>
+            <a href="#">Nightwear & Loungewear</a>
+            <a href="#">Value Packs</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Girls Clothing</h4>
+            <a href="#">Dresses</a>
+            <a href="#">Tops</a>
+            <a href="#">Tshirts</a>
+            <a href="#">Clothing Sets</a>
+            <a href="#">Lehenga choli</a>
+            <a href="#">Kurta Sets</a>
+            <a href="#">Party wear</a>
+            <a href="#">Dungarees & Jumpsuits</a>
+            <a href="#">Skirts & shorts</a>
+            <a href="#">Tights & Leggings</a>
+            <a href="#">Jeans, Trousers & Capris</a>
+            <a href="#">Jacket, Sweater & Sweatshirts</a>
+            <a href="#">Innerwear & Thermals</a>
+            <a href="#">Nightwear & Loungewear</a>
+            <a href="#">Value Packs</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Footwear</h4>
+            <a href="#">Casual Shoes</a>
+            <a href="#">Flipflops</a>
+            <a href="#">Sports Shoes</a>
+            <a href="#">Flats</a>
+            <a href="#">Sandals</a>
+            <a href="#">Heels</a>
+            <a href="#">School Shoes</a>
+            <a href="#">Socks</a>
+            <h4 class="sub-header">Toys & Games</h4>
+            <a href="#">Learning & Development</a>
+            <a href="#">Activity Toys</a>
+            <a href="#">Soft Toys</a>
+            <a href="#">Action Figure / Play set</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Infants</h4>
+            <a href="#">Bodysuits</a>
+            <a href="#">Rompers & Sleepsuits</a>
+            <a href="#">Clothing Sets</a>
+            <a href="#">Tshirts & Tops</a>
+            <a href="#">Dresses</a>
+            <a href="#">Bottom wear</a>
+            <a href="#">Winter Wear</a>
+            <a href="#">Innerwear & Sleepwear</a>
+            <a href="#">Infant Care</a>
+            <h4 class="sub-header">Home & Bath</h4>
+            <h4 class="sub-header">Personal Care</h4>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Kids Accessories</h4>
+            <a href="#">Bags & Backpacks</a>
+            <a href="#">Watches</a>
+            <a href="#">Jewellery & Hair accessory</a>
+            <a href="#">Sunglasses</a>
+            <a href="#">Masks & Protective Gears</a>
+            <a href="#">Caps & Hats</a>
+            <h4 class="sub-header">Brands</h4>
+            <a href="#">H&M</a>
+            <a href="#">Max Kids</a>
+            <a href="#">Pantaloons</a>
+            <a href="#">United Colors Of Benetton Kids</a>
+            <a href="#">YK</a>
+            <a href="#">U.S. Polo Assn. Kids</a>
+            <a href="#">Mothercare</a>
+            <a href="#">HRX</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. HOME & LIVING DROPDOWN -->
+      <div class="nav-item">
+        <a href="#" class="nav-link">HOME & LIVING</a>
+        <div class="dropdown-menu mega-dropdown">
+          <div class="dropdown-column">
+            <h4>Bed Linen & Furnishing</h4>
+            <a href="#">Bed Runners</a>
+            <a href="#">Mattress Protectors</a>
+            <a href="#">Bedsheets</a>
+            <a href="#">Bedding Sets</a>
+            <a href="#">Blankets, Quilts & Dohars</a>
+            <a href="#">Pillows & Pillow Covers</a>
+            <a href="#">Bed Covers</a>
+            <a href="#">Diwan Sets</a>
+            <a href="#">Chair Pads & Covers</a>
+            <a href="#">Sofa Covers</a>
+            <h4 class="sub-header">Flooring</h4>
+            <a href="#">Floor Runners</a>
+            <a href="#">Carpets</a>
+            <a href="#">Floor Mats & Dhurries</a>
+            <a href="#">Door Mats</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Bath</h4>
+            <a href="#">Bath Towels</a>
+            <a href="#">Hand & Face Towels</a>
+            <a href="#">Beach Towels</a>
+            <a href="#">Towels Set</a>
+            <a href="#">Bath Rugs</a>
+            <a href="#">Bath Robes</a>
+            <a href="#">Bathroom Accessories</a>
+            <a href="#">Shower Curtains</a>
+            <h4 class="sub-header">Lamps & Lighting</h4>
+            <a href="#">Floor Lamps</a>
+            <a href="#">Ceiling Lamps</a>
+            <a href="#">Table Lamps</a>
+            <a href="#">Wall Lamps</a>
+            <a href="#">Outdoor Lamps</a>
+            <a href="#">String Lights</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Home Décor</h4>
+            <a href="#">Plants & Planters</a>
+            <a href="#">Aromas & Candles</a>
+            <a href="#">Clocks</a>
+            <a href="#">Mirrors</a>
+            <a href="#">Wall Décor</a>
+            <a href="#">Festive Decor</a>
+            <a href="#">Pooja Essentials</a>
+            <a href="#">Wall Shelves</a>
+            <a href="#">Fountains</a>
+            <a href="#">Showpieces & Vases</a>
+            <a href="#">Ottoman</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Cushions & Cushion Covers</h4>
+            <h4>Curtains</h4>
+            <h4>Furniture</h4>
+            <h4>Home Gift Sets</h4>
+            <h4 class="sub-header">Kitchen & Table</h4>
+            <a href="#">Table Runners</a>
+            <a href="#">Dinnerware & Serveware</a>
+            <a href="#">Cups and Mugs</a>
+            <a href="#">Bakeware & Cookware</a>
+            <a href="#">Kitchen Storage & Tools</a>
+            <a href="#">Bar & Drinkware</a>
+            <a href="#">Table Covers & Furnishings</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Storage</h4>
+            <a href="#">Bins</a>
+            <a href="#">Hangers</a>
+            <a href="#">Organisers</a>
+            <a href="#">Hooks & Holders</a>
+            <a href="#">Laundry Bags</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. BEAUTY DROPDOWN -->
+      <div class="nav-item">
+        <a href="#" class="nav-link">BEAUTY</a>
+        <div class="dropdown-menu mega-dropdown">
+          <div class="dropdown-column">
+            <h4>Makeup</h4>
+            <a href="#">Lipstick</a>
+            <a href="#">Lip Gloss</a>
+            <a href="#">Lip Liner</a>
+            <a href="#">Mascara</a>
+            <a href="#">Eyeliner</a>
+            <a href="#">Kajal</a>
+            <a href="#">Eyeshadow</a>
+            <a href="#">Foundation</a>
+            <a href="#">Primer</a>
+            <a href="#">Concealer</a>
+            <a href="#">Compact</a>
+            <a href="#">Nail Polish</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Skincare, Bath & Body</h4>
+            <a href="#">Face Moisturiser</a>
+            <a href="#">Cleanser</a>
+            <a href="#">Masks & Peel</a>
+            <a href="#">Sunscreen</a>
+            <a href="#">Serum</a>
+            <a href="#">Face Wash</a>
+            <a href="#">Eye Cream</a>
+            <a href="#">Lip Balm</a>
+            <a href="#">Body Lotion</a>
+            <a href="#">Body Wash</a>
+            <a href="#">Body Scrub</a>
+            <a href="#">Hand Cream</a>
+            <h4 class="sub-header">Baby Care</h4>
+            <h4 class="sub-header">Masks</h4>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Haircare</h4>
+            <a href="#">Shampoo</a>
+            <a href="#">Conditioner</a>
+            <a href="#">Hair Cream</a>
+            <a href="#">Hair Oil</a>
+            <a href="#">Hair Gel</a>
+            <a href="#">Hair Color</a>
+            <a href="#">Hair Serum</a>
+            <a href="#">Hair Accessory</a>
+            <h4 class="sub-header">Fragrances</h4>
+            <a href="#">Perfume</a>
+            <a href="#">Deodorant</a>
+            <a href="#">Body Mist</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Appliances</h4>
+            <a href="#">Hair Straightener</a>
+            <a href="#">Hair Dryer</a>
+            <a href="#">Epilator</a>
+            <h4 class="sub-header">Men's Grooming</h4>
+            <a href="#">Trimmers</a>
+            <a href="#">Beard Oil</a>
+            <a href="#">Hair Wax</a>
+            <h4 class="sub-header">Beauty Gift & Makeup Set</h4>
+            <a href="#">Beauty Gift</a>
+            <a href="#">Makeup Kit</a>
+            <h4 class="sub-header">Premium Beauty</h4>
+            <h4 class="sub-header">Wellness & Hygiene</h4>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Top Brands</h4>
+            <a href="#">Lakme</a>
+            <a href="#">Maybelline</a>
+            <a href="#">LOreal</a>
+            <a href="#">Philips</a>
+            <a href="#">Bath & Body Works</a>
+            <a href="#">THE BODY SHOP</a>
+            <a href="#">Biotique</a>
+            <a href="#">Mamaearth</a>
+            <a href="#">MCaffeine</a>
+            <a href="#">Nivea</a>
+            <a href="#">Lotus Herbals</a>
+            <a href="#">LOreal Professionnel</a>
+            <a href="#">KAMA AYURVEDA</a>
+            <a href="#">M.A.C</a>
+            <a href="#">Forest Essentials</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. GENZ DROPDOWN -->
+      <div class="nav-item">
+        <a href="#" class="nav-link">GENZ</a>
+        <div class="dropdown-menu mega-dropdown">
+          <div class="dropdown-column">
+            <h4>Women's Western Wear</h4>
+            <a href="#">Dresses Under ₹599</a>
+            <a href="#">Tops Under ₹399</a>
+            <a href="#">Jeans Under ₹599</a>
+            <a href="#">Trousers Under ₹699</a>
+            <a href="#">T-shirts Under ₹299</a>
+            <a href="#">Shirts Under ₹499</a>
+            <a href="#">Skirts Under ₹499</a>
+            <a href="#">Shorts Under ₹699</a>
+            <a href="#">Co-ords Under ₹799</a>
+            <a href="#">Jumpsuits Under ₹899</a>
+            <a href="#">Track pants Under ₹699</a>
+            <a href="#">Jackets Under ₹899</a>
+            <a href="#">Sweatshirts Under ₹699</a>
+            <a href="#">Sweaters Under ₹899</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Women's Ethnic Wear</h4>
+            <a href="#">Kurtas Under ₹399</a>
+            <a href="#">Kurtis Under ₹499</a>
+            <a href="#">Kurta sets Under ₹499</a>
+            <a href="#">Ethnic Dresses Under ₹999</a>
+            <a href="#">Palazzos Under ₹799</a>
+            <h4 class="sub-header">Lingerie & Loungewear</h4>
+            <a href="#">Bras Under ₹399</a>
+            <a href="#">Night suits Under ₹799</a>
+            <a href="#">Nightdresses Under ₹999</a>
+            <a href="#">Lounge pants Under ₹999</a>
+            <a href="#">Briefs Under ₹599</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Men's Casual Wear</h4>
+            <a href="#">T-shirts Under ₹299</a>
+            <a href="#">Shirts Under ₹499</a>
+            <a href="#">Jeans Under ₹599</a>
+            <a href="#">Trousers Under ₹699</a>
+            <a href="#">Shorts Under ₹599</a>
+            <a href="#">Track pants Under ₹699</a>
+            <a href="#">Jackets Under ₹899</a>
+            <a href="#">Sweatshirts Under ₹699</a>
+            <a href="#">Sweaters Under ₹999</a>
+            <a href="#">Co-ords Under ₹999</a>
+            <h4 class="sub-header">Men's Occasion Wear</h4>
+            <a href="#">Kurtas Under ₹799</a>
+            <a href="#">Kurta Sets Under ₹999</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Women's Footwear</h4>
+            <a href="#">Heels Under ₹599</a>
+            <a href="#">Flats Under ₹499</a>
+            <a href="#">Casual shoes Under ₹699</a>
+            <a href="#">Sports shoes Under ₹999</a>
+            <a href="#">Flip flops Under ₹799</a>
+            <a href="#">Boots Under ₹999</a>
+            <a href="#">Ballerinas Under ₹799</a>
+            <h4 class="sub-header">Men's Footwear</h4>
+            <a href="#">Casual shoes Under ₹799</a>
+            <a href="#">Sports shoes Under ₹999</a>
+            <a href="#">Formal shoes Under ₹999</a>
+            <a href="#">Sandals Under ₹799</a>
+            <a href="#">Flip flops Under ₹499</a>
+            <a href="#">Boots Under ₹999</a>
+          </div>
+
+          <div class="dropdown-column">
+            <h4>Beauty & Grooming</h4>
+            <a href="#">Skincare Under ₹299</a>
+            <a href="#">Haircare Under ₹399</a>
+            <a href="#">Bath & Body Under ₹399</a>
+            <a href="#">MakeUp Under ₹299</a>
+            <a href="#">Fragrances Under ₹399</a>
+            <a href="#">Appliances Under ₹999</a>
+            <h4 class="sub-header">Accessories</h4>
+            <a href="#">Jewellery Under ₹299</a>
+            <a href="#">Handbags Under ₹499</a>
+            <a href="#">Clutches Under ₹999</a>
+            <a href="#">Backpacks Under ₹699</a>
+            <a href="#">Wallets Under ₹499</a>
+            <a href="#">Sunglasses Under ₹699</a>
+            <a href="#">Belts Under ₹799</a>
+            <a href="#">Caps Under ₹899</a>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Search for products, brands and more">
+    </div>
+
+    <!-- User Action Links -->
+    <div class="user-actions">
+      <div class="action-item">
+        <span>Profile</span>
+      </div>
+      <div class="action-item">
+        <span>Wishlist</span>
+      </div>
+      <div class="action-item">
+        <span>Bag</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNERS SECTION -->
+  <section class="banner-container">
+    <!-- Hero Banner Image -->
+    <img class="hero-banner" src="./dndfsB1V_65ecb385cb2e4af2b0313364aeae6da8.webp" alt="Main Sale Banner">
+    
+    <!-- Secondary Banner Image -->
+    <img class="sub-banner" src="./4031994d-9092-4aa7-aea1-f52f2ae5194f1654006594976-Activewear_DK.webp" alt="Secondary Banner">
+    <img class="sub-banner" src="./G3nDKp8I_ceb585ae8826431d9a98ed1d7bda9eec.gif" alt="Secondary Banner">
+  </section>
+
+  <!-- SHOP BY CATEGORY SECTION -->
+  <main class="main-content">
+    <h2 class="section-title">SHOP BY CATEGORY</h2>
+    
+    <div class="category-grid">
+      <!-- Card 1 -->
+      <div class="category-card">
+        <div class="card-image">
+          <img src="images/ethnic-wear.jpg" alt="Ethnic Wear">
+        </div>
+        <div class="card-info">
+          <h3>Ethnic Wear</h3>
+          <p class="discount">50-80% OFF</p>
+          <span class="shop-now">Shop Now</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="category-card">
+        <div class="card-image">
+          <img src="images/casual-wear.jpg" alt="Casual Wear">
+        </div>
+        <div class="card-info">
+          <h3>Casual Wear</h3>
+          <p class="discount">40-80% OFF</p>
+          <span class="shop-now">Shop Now</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="category-card">
+        <div class="card-image">
+          <img src="images/mens-activewear.jpg" alt="Men's Activewear">
+        </div>
+        <div class="card-info">
+          <h3>Men's Activewear</h3>
+          <p class="discount">30-70% OFF</p>
+          <span class="shop-now">Shop Now</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="category-card">
+        <div class="card-image">
+          <img src="images/womens-activewear.jpg" alt="Women's Activewear">
+        </div>
+        <div class="card-info">
+          <h3>Women's Activewear</h3>
+          <p class="discount">30-70% OFF</p>
+          <span class="shop-now">Shop Now</span>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="category-card">
+        <div class="card-image">
+          <img src="images/western-wear.jpg" alt="Western Wear">
+        </div>
+        <div class="card-info">
+          <h3>Western Wear</h3>
+          <p class="discount">40-80% OFF</p>
+          <span class="shop-now">Shop Now</span>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="category-card">
+        <div class="card-image">
+          <img src="images/sportswear.jpg" alt="Sportswear">
+        </div>
+        <div class="card-info">
+          <h3>Sportswear</h3>
+          <p class="discount">30-80% OFF</p>
+          <span class="shop-now">Shop Now</span>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="category-card">
+        <div class="card-image">
+          <img src="images/loungewear.jpg" alt="Loungewear">
+        </div>
+        <div class="card-info">
+          <h3>Loungewear</h3>
+          <p class="discount">30-60% OFF</p>
+          <span class="shop-now">Shop Now</span>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="category-card">
+        <div class="card-image">
+          <img src="images/innerwear.jpg" alt="Innerwear">
+        </div>
+        <div class="card-info">
+          <h3>Innerwear</h3>
+          <p class="discount">UP TO 70% OFF</p>
+          <span class="shop-now">Shop Now</span>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="category-card">
+        <div class="card-image">
+          <img src="images/lingerie.jpg" alt="Lingerie">
+        </div>
+        <div class="card-info">
+          <h3>Lingerie</h3>
+          <p class="discount">UP TO 70% OFF</p>
+          <span class="shop-now">Shop Now</span>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="category-card">
+        <div class="card-image">
+          <img src="images/watches.jpg" alt="Watches">
+        </div>
+        <div class="card-info">
+          <h3>Watches</h3>
+          <p class="discount">UP TO 80% OFF</p>
+          <span class="shop-now">Shop Now</span>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="category-card">
+        <div class="card-image">
+          <img src="images/grooming.jpg" alt="Grooming">
+        </div>
+        <div class="card-info">
+          <h3>Grooming</h3>
+          <p class="discount">UP TO 60% OFF</p>
+          <span class="shop-now">Shop Now</span>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="category-card">
+        <div class="card-image">
+          <img src="images/beauty-makeup.jpg" alt="Beauty & Makeup">
+        </div>
+        <div class="card-info">
+          <h3>Beauty & Makeup</h3>
+          <p class="discount">UP TO 60% OFF</p>
+          <span class="shop-now">Shop Now</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

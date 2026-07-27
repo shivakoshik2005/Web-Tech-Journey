@@ -1,0 +1,256 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 50px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.myntra-logo {
+  width: 50px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  height: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #282c3f;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  padding: 28px 0;
+  border-bottom: 4px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.nav-item:hover .nav-link {
+  border-bottom: 4px solid #f54e77;
+}
+
+/* WIDE & SPACIOUS MEGA DROPDOWN MENU */
+.dropdown-menu.mega-dropdown {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 80px;
+  left: 0; /* Aligned to start zone without overflowing */
+  width: 1100px;
+  max-width: 90vw;
+  background-color: #ffffff;
+  padding: 25px 30px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08);
+  border-top: 1px solid #f5f5f6;
+
+  /* Basic visibility toggling */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.nav-item:hover .dropdown-menu.mega-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* SPACIOUS DROPDOWN COLUMNS */
+.dropdown-column {
+  flex: 1;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #f5f5f6;
+}
+
+.dropdown-column:last-child {
+  border-right: none;
+}
+
+.dropdown-column h4 {
+  color: #f54e77;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.dropdown-column h4.sub-header {
+  margin-top: 18px;
+  padding-top: 10px;
+  border-top: 1px solid #eaeaec;
+}
+
+.dropdown-column h4:first-child {
+  margin-top: 0;
+}
+
+.dropdown-column a {
+  text-decoration: none;
+  color: #282c3f;
+  font-size: 12px;
+  margin-bottom: 5px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.dropdown-column a:hover {
+  font-weight: 600;
+  color: #f54e77;
+  background-color: #fff0f3;
+}
+
+/* SEARCH BAR */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f6;
+  padding: 10px 15px;
+  border-radius: 4px;
+  width: 25%;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* USER ACTIONS */
+.user-actions {
+  display: flex;
+  gap: 25px;
+}
+
+.action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #282c3f;
+}
+
+/* BANNERS CONTAINER */
+.banner-container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.banner-container img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* MAIN CONTENT & CATEGORY GRID */
+.main-content {
+  padding: 20px 40px;
+}
+
+.section-title {
+  letter-spacing: 3px;
+  color: #3e4152;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+
+/* 6-COLUMN GRID FOR CATEGORIES */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+/* CARD STYLING */
+.category-card {
+  border: 2px solid #ffd8c0;
+  background-color: #fff9f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  padding: 8px 8px 0 8px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-info {
+  padding: 10px 5px 12px 5px;
+  width: 100%;
+  background-color: #fff9f5;
+}
+
+.card-info h3 {
+  font-size: 13px;
+  color: #282c3f;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.card-info .discount {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+
+.card-info .shop-now {
+  font-size: 12px;
+  color: #282c3f;
+  font-weight: 400;
+}
