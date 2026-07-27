@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav id="navigation-bar">
+        <div id="left-part">
+            <div id="logo">
+                <img src="./logo.webp" alt="flash card logo">
+            </div>
+            <h1>Flashcard</h1>
+        </div>
+        <div id="right-part">
+            <div id="cell-1">Study Mode</div>
+            <div id="cell-2"> All Cards</div>
+        </div>
+    </nav>
+
+    <main id="main-screen">
+        <div id="content">
+
+
+            <div id="top-area">
+                <div id="drop-down"> All Categories v</div>
+                <div id="checkbox" style="font-size: 20px;"> <input type="checkbox" style="height: 20px; width: 20px;">
+                    Hide Matered</div>
+                <div id="shuffle"> <i class="fa-solid fa-shuffle"></i> Shuffle</div>
+            </div>
+
+            <div id="mid-area">
+                <div id="q-card">
+                    <div id="heading">Web Development</div>
+                    <div id="question">
+                        <h1>What does HTML stand for?</h1>
+                        <p style="margin-top: 20px;">Click to reveal answer</p>
+                    </div>
+
+                    <div id="bottom">
+                        <div id="bottom-pil"></div>
+                        <p>0/5</p>
+                    </div>
+                </div>
+                <div id="controls">
+                    <div class="options" style="background-color: rgb(249,206,67);"> I Know This</div>
+                    <div class="options"> Reset Progress</div>
+                </div>
+            </div>
+
+            <div id="bot-area">
+                <div id="previous">
+                    < Previous</div>
+                        <div id="cards">Card 1 of 40</div>
+                        <div id="next"> Next ></div>
+                </div>
+            </div>
+
+            <div id="stats">
+                <h1>Study Statistics</h1>
+                <div class="card">
+                    <div class="rp">
+                        <h3>Total Cards</h3>
+                        <h1>40</h1>
+                    </div>
+                    <div class="lp">
+                        <i class="fa-brands fa-stack-exchange"></i>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="rp">
+                        <h3>Mastered</h3>
+                        <h1>11</h1>
+                    </div>
+                    <div class="lp b">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="rp">
+                        <h3>In Progress</h3>
+                        <h1>21</h1>
+                    </div>
+                    <div class="lp c">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="rp">
+                        <h3>Not Started</h3>
+                        <h1>8</h1>
+                    </div>
+                    <div class="lp d">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
