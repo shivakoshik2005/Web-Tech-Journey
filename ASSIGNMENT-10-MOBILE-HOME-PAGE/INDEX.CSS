@@ -15,7 +15,7 @@ body {
     color: #ffffff;
 }
 
-/* Mobile Screen Frame */
+
 #mobile-screen {
     height: 840px;
     width: 390px;
@@ -29,9 +29,6 @@ body {
 }
 
 
-
-
-/* Layout Grid */
 .dashboard-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -58,7 +55,7 @@ body {
     width: 100%;
 }
 
-/* Base Widget Styling */
+
 .widget {
     width: 100%;
     background: rgba(20, 20, 22, 0.82);
@@ -71,7 +68,7 @@ body {
     justify-content: center;
 }
 
-/* Record Widget */
+
 .record-widget {
     flex-direction: row;
     align-items: center;
@@ -97,7 +94,7 @@ body {
     font-weight: bold;
 }
 
-/* Image Widgets */
+
 .clock-widget-wrapper {
     width: 100%;
     display: flex;
@@ -138,7 +135,6 @@ body {
     height: 140px;
 }
 
-/* Sleep Widget */
 .sleep-widget {
     background: radial-gradient(circle at top right, #242962, #181b40 80%);
     padding: 16px;
@@ -207,7 +203,6 @@ body {
     width: 100%;
 }
 
-/* Screen Time Widget */
 .screentime-widget {
     flex-direction: row;
     align-items: center;
@@ -264,7 +259,7 @@ body {
 .bar-fill.green { background: #30d158; }
 .bar-fill.gray { background: #555555; }
 
-/* Reminders Widget */
+
 .reminders-widget {
     background: rgba(18, 18, 20, 0.92);
     padding: 16px;
