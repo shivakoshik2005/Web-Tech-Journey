@@ -8,7 +8,6 @@
 body {
     background-color: rgb(247, 243, 240);
     padding: 1rem 4rem;
-    min-height: 100vh;
 }
 
 /* navbar */
@@ -255,7 +254,7 @@ img {
     background-color: rgb(253,139,229);
 }
 
-/* 1. Tablet View  */
+/* 1. Tab View  */
 @media (max-width: 1200px) {
     body {
         padding: 1rem 2rem;
@@ -294,6 +293,8 @@ img {
 
     #heading {
         width: 10rem;
+        height: 2rem;
+        font-size: 1em ;
     }
 
     #bottom-pil {
