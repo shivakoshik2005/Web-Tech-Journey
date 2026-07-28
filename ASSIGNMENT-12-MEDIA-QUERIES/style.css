@@ -256,7 +256,7 @@ img {
 }
 
 /* 1. Tablet View  */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     body {
         padding: 1rem 2rem;
     }
