@@ -7,13 +7,11 @@
 
 body {
     background-color: rgb(247, 243, 240);
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
     min-height: 100vh;
 }
 
-/* ==========================================
-   Navbar
-   ========================================== */
+/* navbar */
 #navigation-bar {
     display: flex;
     height: 8vh;
@@ -56,9 +54,7 @@ img {
 }
 
 
-/* ==========================================
-   Main Screen
-   ========================================== */
+/* main */
 #main-screen {
     height: 80vh;
     margin-top: 2vh;
@@ -84,9 +80,7 @@ img {
     background-color: white;
 }
 
-/* ==========================================
-   Content - Top Area
-   ========================================== */
+/* content top */
 #top-area {
     display: flex;
     align-items: center;
@@ -114,9 +108,7 @@ img {
     cursor: pointer;
 }
 
-/* ==========================================
-   Content - Middle Area
-   ========================================== */
+/* content - middle */
 #mid-area {
     height: 74%;
     padding: 1rem;
@@ -194,9 +186,9 @@ img {
     
 }
 
-/* ==========================================
-   Content - Bottom Area
-   ========================================== */
+
+   /* Content - Bottom Area */
+
 #bot-area {
     display: flex;
     height: 13%;
@@ -216,9 +208,7 @@ img {
     cursor: pointer;
 }
 
-/* ==========================================
-   Stats Section
-   ========================================== */
+/* stats */
 
 .card {
     display: flex;
