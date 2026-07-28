@@ -129,6 +129,8 @@ img {
     padding: 1.5rem 1rem;
     /* Background color */
     background-color: rgb(253, 139, 229);
+    
+    /* ai part */
 
     /* Create horizontal and vertical grid lines */
     background-image: 
@@ -183,11 +185,10 @@ img {
     border: 3px solid black;
     border-radius: 20px;
     padding: 0.8rem 1.5rem;
-    
 }
 
 
-   /* Content - Bottom Area */
+/* Content - Bottom Area */
 
 #bot-area {
     display: flex;
@@ -252,4 +253,109 @@ img {
 }
 .d{
     background-color: rgb(253,139,229);
+}
+
+/* 1. Tablet View  */
+@media (max-width: 900px) {
+    body {
+        padding: 1rem 2rem;
+    }
+
+    #main-screen {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #content {
+        width: 100%;
+        height: auto;
+    }
+
+    #stats {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    #stats {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #stats h1 {
+        width: 100%;
+    }
+
+    .card {
+        flex-basis: 48%;
+        margin-top: 1rem;
+    }
+
+    #heading {
+        width: 10rem;
+    }
+
+    #bottom-pil {
+        width: 3rem;
+    }
+}
+
+/*Mobile View */
+@media (max-width: 700px) {
+    body {
+        padding: 0.5rem 1rem;
+    }
+
+    #navigation-bar {
+        height: auto;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    #left-part h1 {
+        font-size: 1.5rem;
+    }
+
+    #right-part {
+        font-size: 0.9rem;
+    }
+
+    #cell-1, #cell-2 {
+        padding: 0.5rem 0.8rem;
+    }
+
+    #top-area {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        padding: 0.8rem 0.5rem;
+    }
+
+    #controls {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .options {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    .lp, .rp {
+        height: 5rem;
+    }
+
+    .card h1 {
+        font-size: 2rem;
+    }
+
+    .lp {
+        font-size: 2em;
+    }
 }
