@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+    padding: 80px;
+}
+
+#cards {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    height: 100%;
+    width: 25%;
+    border-radius: 3rem;
+    border: 4px dashed black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    transform-style: preserve-3d; 
+    transition: transform 0.8s ease, background-color 0.5s ease;
+
+}
+.front, .back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateX(180deg); 
+}
+
+.card:hover {
+    transform: rotateX(180deg);
+}
+
+
+.o {
+    background-color: orange;
+}
+
+.o1 {
+    background-color: yellow;
+}
+
+.o2 {
+    background-color: aqua;
+}
+
+.o3 {
+    background-color: palegreen;
+}
+
+
+.o:hover {
+    background-color: aqua;
+    transform: rotateX(180deg);
+}
+
+.o1:hover {
+    background-color: palegreen;
+    transform: rotateX(180deg);
+}
+
+.o2:hover {
+    background-color: orange;
+    transform: rotateX(180deg);
+}
+
+.o3:hover {
+    background-color: yellow;
+    transform: rotateX(180deg);
+}
+
+/* color fix */
+.o:hover~.o2 {
+    background-color: orange;
+}
+
+.o1:hover~.o3 {
+    background-color: yellow;
+}
+
+#cards:has(.o2:hover) .o {
+    background-color: aqua;
+}
+
+#cards:has(.o3:hover) .o1 {
+    background-color: palegreen;
+}
