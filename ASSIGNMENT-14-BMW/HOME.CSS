@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#banner {
+    height: 82vh;
+    width: 100%;
+    /* Combine gradient layer and background image into one rule */
+    background-image: 
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.85) 20%,
+            rgba(0, 0, 0, 0.4) 50%,
+            rgba(0, 0, 0, 0) 75%
+        ),
+        url('./assets/top-banner-for nav.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 0 110px;
+}
+
+#navbar {
+    height: 11vh;
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo {
+    height: 65px;
+    flex-basis: 4.1%;
+    background-image: url('./assets/BMW_White_Logo.svg.asset.1670245093434.svg');
+    background-size: cover;
+}
+
+#menu {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 20px;
+}
+
+#options {
+    flex-basis: 56%;
+    display: flex;
+    padding-left: 25em;
+    justify-content: space-around;
+    color: white;
+    font-size: 25px;
+}
