@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 body {
@@ -61,8 +62,7 @@ body {
     transition: color 0.25s ease;
 }
 
-.menu-item:hover,
-.menu-item.show {
+.menu-item:hover{
     color: #8ec8ff;
 }
 
@@ -207,7 +207,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 50px 110px 20px 110px;
-    background: #efefef;
+    background-color: white;
     position: relative;
     flex-wrap: wrap;
 }
@@ -218,6 +218,7 @@ body {
     font-size: 28px;
     font-weight: 300;
     color: #101010;
+    text-align: center;
 }
 
 .bmw-buttons {
@@ -271,6 +272,7 @@ body {
     display: flex;
     align-items: flex-end;
     padding: 0 110px 50px 110px;
+    margin-top: 50px;
 }
 
 #op1 {
@@ -282,22 +284,23 @@ body {
 }
 
 #op3 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.15)), url('./assets/details-banner.webp');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.15)), url('./assets/op3-banner.webp');
 }
 
 .feature-content {
     color: #ffffff;
     max-width: 500px;
+    margin-bottom: 100px;
 }
 
 .feature-content h3 {
-    font-size: 22px;
+    font-size: 42px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
 .feature-content h2 {
-    font-size: 34px;
+    font-size: 44px;
     font-weight: 400;
     margin-bottom: 12px;
 }
@@ -312,7 +315,14 @@ body {
     display: flex;
     gap: 18px;
     align-items: center;
+    border: 2px solid white;
+    padding: 10px;
+    width: 150px;
+    justify-content: center;
+    
 }
+
+
 
 .feature-links a,
 .details-copy a,
@@ -336,14 +346,14 @@ body {
     width: 100%;
     min-height: 290px;
     display: flex;
-    background: #f3f3f3;
+    background-color: white;
     padding: 40px 110px;
     gap: 30px;
     align-items: center;
 }
 
 .details-copy {
-    flex: 1.2;
+    
     color: var(--text);
 }
 
@@ -360,19 +370,20 @@ body {
     max-width: 620px;
 }
 
-.details-copy a {
-    color: var(--text);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
-    padding-bottom: 3px;
+button{
+    padding: 7px;
+    border: 2px solid black;
+    background-color: white;
 }
 
 .details-image {
-    flex: 1;
-    min-height: 220px;
-    background-image: url('./assets/top-banner-for nav.webp');
+    
+    height: 520px;
+    width: 1000px;
+    background-image: url('./assets/details.webp');
     background-size: cover;
     background-position: center;
-    border-radius: 8px;
+    
 }
 
 .site-footer {
@@ -385,7 +396,7 @@ body {
     height: 76px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 18px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
