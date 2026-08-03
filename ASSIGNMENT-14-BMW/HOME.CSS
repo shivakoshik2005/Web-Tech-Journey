@@ -2,56 +2,516 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #101010;
 }
 
 #banner {
-    height: 82vh;
     width: 100%;
-    /* Combine gradient layer and background image into one rule */
-    background-image: 
-        linear-gradient(
-            to right,
-            rgba(0, 0, 0, 1) 0%,
-            rgba(0, 0, 0, 0.85) 20%,
-            rgba(0, 0, 0, 0.4) 50%,
-            rgba(0, 0, 0, 0) 75%
-        ),
-        url('./assets/top-banner-for nav.webp');
+    min-height: 83vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.75) 14%, rgba(0, 0, 0, 0.25) 52%, rgba(0, 0, 0, 0.05) 100%), url('./assets/top-banner-for nav.webp');
     background-size: cover;
     background-position: center;
-    padding: 0 110px;
+    padding: 12px 110px 70px 110px;
 }
 
 #navbar {
-    height: 11vh;
-    width: 100%;
-    border-bottom: 2px solid white;
+    height: 4.7rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     display: flex;
     align-items: center;
-    padding: 10px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    padding: 0 1.1rem 0 1.1rem;
 }
 
 #logo {
-    height: 65px;
-    flex-basis: 4.1%;
+    width: 3.8rem;
+    height: 3.2rem;
     background-image: url('./assets/BMW_White_Logo.svg.asset.1670245093434.svg');
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
 }
 
 #menu {
-    flex-basis: 40%;
     display: flex;
-    justify-content: space-evenly;
-    color: white;
-    font-size: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.1rem;
+    width: auto;
+    color: #ffffff;
+    font-size: 0.95rem;
+    letter-spacing: 0.02rem;
+    position: relative;
+    margin-left: 1.1rem;
+    margin-right: auto;
+}
+
+.menu-item {
+    position: relative;
+    padding: 26px 0 20px 0;
+    cursor: pointer;
+    transition: color 0.25s ease;
+}
+
+.menu-item:hover,
+.menu-item.show {
+    color: #8ec8ff;
+}
+
+.menu-item:hover::after,
+.menu-item.show::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 3px;
+    background: #1d69d4;
+}
+
+.menu-trigger {
+    border: none;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.25s ease;
+}
+
+.menu-trigger:hover,
+.menu-trigger:focus {
+    color: #8ec8ff;
+}
+
+.dropdown-panel {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-37%);
+    width: 1580px;
+    background: rgba(245, 245, 245, 0.97);
+    color: #111111;
+    display: none;
+    padding: 2.2rem 2.5rem 1.8rem 2.5rem;
+    box-shadow: 0 0.7rem 1.8rem rgba(0, 0, 0, 0.08);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    z-index: 20;
+}
+
+.more-bmw-btn.show .dropdown-panel {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(11.5rem, 1fr));
+    gap: 2.2rem 1.5rem;
+    
+}
+
+
+/* .more-bmw-btn .dropdown-panel {
+    left: 0%;
+    transform: translateX(-37%);
+    width: 1465px;
+    padding: 35px 40px 30px 40px;
+} */
+
+
+.dropdown-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    min-height: 7.5rem;
+}
+
+.dropdown-column h3 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #111111;
+    margin-bottom: 0.7rem;
+    line-height: 1.35;
+}
+
+.dropdown-column a {
+    text-decoration: none;
+    color: rgba(17, 17, 17, 0.82);
+    font-size: 1rem;
+    line-height: 1.7;
+    transition: color 0.25s ease;
+}
+
+.dropdown-column a:hover {
+    color: #0b5ec6;
 }
 
 #options {
-    flex-basis: 56%;
     display: flex;
-    padding-left: 25em;
-    justify-content: space-around;
-    color: white;
-    font-size: 25px;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    color: #ffffff;
+    font-size: 16px;
+    flex-shrink: 0;
 }
+
+#options i,
+.socials i {
+    transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+#options i:hover,
+.socials i:hover {
+    color: #8ec8ff;
+}
+
+#demo {
+    margin-top: 150px;
+}
+
+#demo h1 {
+    color: #ffffff;
+    font-size: 46px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+#demo h2 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#register {
+    margin-top: 26px;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 5px;
+    background: #1d69d4;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#bmw {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 110px 20px 110px;
+    background: #efefef;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+#bmw h4 {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 300;
+    color: #101010;
+}
+
+.bmw-buttons {
+    width: 30%;
+    min-height: 210px;
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 20px 25px;
+    text-align: center;
+}
+
+.caricon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a0a0a;
+    font-size: 22px;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: 300;
+    color: #101010;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 18px;
+    border-radius: 5px;
+    background: #1d69d4;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.feature-panel {
+    width: 100%;
+    min-height: 520px;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 110px 50px 110px;
+}
+
+#op1 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.08)), url('./assets/op1-banner.webp');
+}
+
+#op2 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1)), url('./assets/op2-banner.webp');
+}
+
+#op3 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.15)), url('./assets/details-banner.webp');
+}
+
+.feature-content {
+    color: #ffffff;
+    max-width: 500px;
+}
+
+.feature-content h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.feature-content h2 {
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.feature-content p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.feature-links {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.feature-links a,
+.details-copy a,
+.legal-links a,
+.footer-column a,
+#updated a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#op1 .feature-links a,
+#op2 .feature-links a,
+#op3 .feature-links a {
+    color: var(--light-text);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    padding-bottom: 2px;
+}
+
+#details {
+    width: 100%;
+    min-height: 290px;
+    display: flex;
+    background: #f3f3f3;
+    padding: 40px 110px;
+    gap: 30px;
+    align-items: center;
+}
+
+.details-copy {
+    flex: 1.2;
+    color: var(--text);
+}
+
+.details-copy h2 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.details-copy p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    max-width: 620px;
+}
+
+.details-copy a {
+    color: var(--text);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    padding-bottom: 3px;
+}
+
+.details-image {
+    flex: 1;
+    min-height: 220px;
+    background-image: url('./assets/top-banner-for nav.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.site-footer {
+    background: #f5f5f4;
+    color: #111111;
+    padding: 0 90px 30px 90px;
+}
+
+.footer-topbar {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.brand-mark {
+    width: 28px;
+    height: 28px;
+    background-image: url('./assets/BMW_White_Logo.svg.asset.1670245093434.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(1);
+}
+
+.footer-topbar p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #111111;
+}
+
+.footer-topbar a {
+    color: #111111;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+.footer-topbar a:hover {
+    color: #0b5ec6;
+}
+
+.footer-topbar a span {
+    font-size: 26px;
+    line-height: 1;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr 1.2fr 1.3fr 1.4fr 1.2fr;
+    gap: 28px;
+    padding: 34px 0 26px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column h4 {
+    font-size: 22px;
+    color: #111111;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: rgba(17, 17, 17, 0.8);
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.6;
+    transition: color 0.25s ease;
+}
+
+.footer-column a:hover {
+    color: #0b5ec6;
+}
+
+.social-column {
+    align-items: flex-start;
+}
+
+.socials {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 18px;
+    font-size: 18px;
+    color: #111111;
+}
+
+.socials i {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.socials i:hover {
+    background: #0b5ec6;
+    color: #ffffff;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 14px;
+    font-size: 14px;
+    color: rgba(17, 17, 17, 0.8);
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+.legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.legal-links a {
+    color: rgba(17, 17, 17, 0.8);
+    text-decoration: none;
+}
+
